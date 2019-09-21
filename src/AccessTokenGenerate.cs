@@ -51,7 +51,7 @@ namespace Zop.AspNetCore.Authentication.JwtBearer
             {
                 claimList.Add(new Claim(claim.Key, claim.Value));
             }
-            return this.Generate(claims);
+            return this.Generate(claimList);
         }
 
 
